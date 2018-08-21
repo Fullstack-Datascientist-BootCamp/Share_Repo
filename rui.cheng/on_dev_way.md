@@ -24,9 +24,11 @@
 说到PYTHON，很多人都会写，语言很简单，但工程师之间工资又各有不同，这是为什么呢？为了回答这个问题，不妨上拉勾网搜索了一下“金主”们对工程师的要求。
 <sub>搜索词为'python'，筛选为工资‘25k-50k’以及‘50k以上’,我随机选取了第一页的两个公司</sub>
 ![](https://upload-images.jianshu.io/upload_images/12134479-f64712c6ffac53f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 *初级玩家*
 
 ![](https://upload-images.jianshu.io/upload_images/12134479-617815c44aae4a68.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 *中级玩家*
 
 可是看出，对于‘初级玩家’公司主要看你“会不会”，也就是0和1的区别；而对于‘中级玩家’公司主要看中你“会不会分析，能不能优化”，也就是1和10的区别；至于‘高级玩家’，我想只会PYTHON是不行的。那么我的这篇文章，一方面总结一下我半年的学习成果，希望能够把知识从0到1真正落到实处，便于以后从1到10不断进步；另一方面，借着分享交流的互联网，希望各位同行能够指出我工作学习中的短板，帮助我不断改进。
@@ -58,6 +60,7 @@ def score_frame(frame=10):
 ```
 
 ![1](https://upload-images.jianshu.io/upload_images/12134479-c9f6fac31a6cc038.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+
 *Clean code is simple and direct. Clean code reads like well-written prose. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.*
 
 ##### 2.2 Flask
@@ -68,7 +71,7 @@ def score_frame(frame=10):
 
 训练成果：能够独立编写并部署一个满足业务需求的web应用
 ![](https://upload-images.jianshu.io/upload_images/12134479-409b3b1a48a87ac9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-*FLASK框架可以简单至此，但面对更大的需求，还需多思量。*
+
 ```python3
 from flask import Flask, request, jsonify
 from models import get_question_analysis
@@ -226,7 +229,8 @@ def denominator(x):
     return x(1)
 ```
 ![](https://upload-images.jianshu.io/upload_images/12134479-172d72c886138949.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1600)
-*Isolate the parts of a program that deal with how data are represendted from the parts that deal with how data are manipulated*  
+
+*Isolate the parts of a program that deal with how data are represendted from the parts that deal with how data are manipulated*
 用了一个简单的例子来解释表示层和操作层（完全不一样的表示层，但是操作层却完全一样），庞大的系统必然存在着细小的抽象。我们只要能够掌握抽象的方法，再配合leetcode中的算法知识，那么所有的业务逻辑必然迎刃而解。
 
 ##### 2.7 lib/site-packages
@@ -246,6 +250,7 @@ soup.find_all()
 
 最后的最后，在项目开发的过程中，一定会和公司业务有联系，也一定会发生很多bug，更会有一些奇奇怪怪的需求。为了应对各种各样的事情，python工程师集成了大量好用的工具，比如elastic-search，sentry，kafka， memcache等等，这种Client/Server的构架很好用，也是微服务的雏形。
 ![](https://upload-images.jianshu.io/upload_images/12134479-ca96f2ae376e2466.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 *The client/server model is appropriate for service-oriented situations.*
 
 ##### 2.9 behave && selenium
