@@ -23,9 +23,11 @@
 
 说到PYTHON，很多人都会写，语言很简单，但工程师之间工资又各有不同，这是为什么呢？为了回答这个问题，不妨上拉勾网搜索了一下“金主”们对工程师的要求。
 <sub>搜索词为'python'，筛选为工资‘25k-50k’以及‘50k以上’,我随机选取了第一页的两个公司</sub>
-![初级玩家](https://upload-images.jianshu.io/upload_images/12134479-f64712c6ffac53f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/12134479-f64712c6ffac53f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+*初级玩家*
 
-![中级玩家](https://upload-images.jianshu.io/upload_images/12134479-617815c44aae4a68.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/12134479-617815c44aae4a68.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+*中级玩家*
 
 可是看出，对于‘初级玩家’公司主要看你“会不会”，也就是0和1的区别；而对于‘中级玩家’公司主要看中你“会不会分析，能不能优化”，也就是1和10的区别；至于‘高级玩家’，我想只会PYTHON是不行的。那么我的这篇文章，一方面总结一下我半年的学习成果，希望能够把知识从0到1真正落到实处，便于以后从1到10不断进步；另一方面，借着分享交流的互联网，希望各位同行能够指出我工作学习中的短板，帮助我不断改进。
 
@@ -52,9 +54,7 @@ def score_frame(frame=10):
     return score
 ```
 
-
-
-![1](https://upload-images.jianshu.io/upload_images/12134479-c9f6fac31a6cc038.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)  
+![1](https://upload-images.jianshu.io/upload_images/12134479-c9f6fac31a6cc038.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
 *Clean code is simple and direct. Clean code reads like well-written prose. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.*
 
 ##### 2.2 Flask
@@ -62,7 +62,8 @@ def score_frame(frame=10):
 整洁代码是基础中的基础，接下来掌握的是web框架。要想熟练使用Flask，知识上要求对网络会话层、表示层和应用层有了解，从Client端输入URI并发送请求的一瞬间，网络通过自上而下的OSI结构，传输层（TCP）--- 网络层（IP） --- 数据链路层 --- 物理层， 路由（识别IP），然后，Server端与之建立TCP连接，拿到request对象，梳理业务逻辑，返回response对象，经过同样的一系列过程到Client端接受数据（如果是浏览器则会渲染页面）。这背后所有的事情，就是一个web工程师的工作所在。
 训练方法：《Flask Web开发，基于python的web开发实战》，上篇文章已经推荐过了
 训练成果：能够独立编写并部署一个满足业务需求的web应用
-![FLASK框架可以简单至此，但面对更大的需求，还望多思量。](https://upload-images.jianshu.io/upload_images/12134479-409b3b1a48a87ac9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/12134479-409b3b1a48a87ac9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+*FLASK框架可以简单至此，但面对更大的需求，还需多思量。*
 ```python3
 from flask import Flask, request, jsonify
 from models import get_question_analysis
@@ -86,8 +87,8 @@ if __name__ == '__main__':
 
 ##### 2.3 AioHttp
 
-一步通，则步步通，能够学会一个框架，其他的框架就不难了。Flask的底层是werkzeuk，基于CGI（通用网关接口，Common Gateway Interface）的WSGI在业务受到了异步的挑战，ASGI应运而生。AioHttp的框架，支持python asycio，能极大的提高API的性能（与flask框架下API性能的差异，请移步我的[测试文章](https://www.jianshu.com/p/eda9fd632764)）。
-训练方法：[AioHttp Git](https://github.com/aio-libs/aiohttp/)，[Asyncio Doc](https://docs.python.org/3/library/asyncio.html)，永远不要忘记源码和doc
+一步通，则步步通，能够学会一个框架，其他的框架就不难了。Flask的底层是werkzeuk，基于CGI（通用网关接口，Common Gateway Interface）的WSGI在业务受到了异步的挑战，ASGI应运而生。AioHttp的框架，支持python asycio，能极大的提高API的性能（与flask框架下API性能的差异，可以查看压测报告）。
+训练方法：[AioHttp Git](https://github.com/aio-libs/aiohttp/)，[Asyncio Doc](https://docs.python.org/3/library/asyncio.html)，永远不要放下源码和doc
 训练成果：能够独立编写并部署一个满足业务需求的web应用，理解并掌握python的异步语法
 ```python3
 from aiohttp import web
@@ -215,7 +216,8 @@ def numerator(x):
 def denominator(x):
     return x(1)
 ```
-![Isolate the parts of a program that deal with how data are represendted from the parts that deal with how data are manipulated](https://upload-images.jianshu.io/upload_images/12134479-172d72c886138949.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1600)
+![](https://upload-images.jianshu.io/upload_images/12134479-172d72c886138949.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1600)
+*Isolate the parts of a program that deal with how data are represendted from the parts that deal with how data are manipulated*
 用了一个简单的例子来解释表示层和操作层（完全不一样的表示层，但是操作层却完全一样），庞大的系统必然存在着细小的抽象。我们只要能够掌握抽象的方法，再配合leetcode中的算法知识，那么所有的业务逻辑必然迎刃而解。
 
 ##### 2.7 lib/site-packages
@@ -234,7 +236,8 @@ soup.find_all()
 ##### 2.8 widgets
 
 最后的最后，在项目开发的过程中，一定会和公司业务有联系，也一定会发生很多bug，更会有一些奇奇怪怪的需求。为了应对各种各样的事情，python工程师集成了大量好用的工具，比如elastic-search，sentry，kafka， memcache等等，这种Client/Server的构架很好用，也是微服务的雏形。
-![The client/server model is appropriate for service-oriented situations.](https://upload-images.jianshu.io/upload_images/12134479-ca96f2ae376e2466.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/12134479-ca96f2ae376e2466.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+*The client/server model is appropriate for service-oriented situations.*
 
 ##### 2.9 behave && selenium
 
@@ -264,7 +267,7 @@ def send_key(context):
 @then('我在个人主页')
     assert is_at_page(HOME_PAGE)
 ```
-如果你觉得测试没有必要，那你一定没有写过测试！
+如果你不重视测试，那你一定没有写过测试！
 
 ##### 2.10 CI && CD
 
