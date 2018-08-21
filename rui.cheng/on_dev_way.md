@@ -16,7 +16,7 @@
   - 基本业务管理，能够预估开发feature的时间，能够管理开发的轻重缓急，能够对业务细节反复推敲
   - 基本个人管理，能够健康，能够“有爱”
 
-就个人或小组开发而言，掌握以上应该能让你非常舒服地做一个开发工程师，所谓工欲善其事，必先利其器。
+就个人或小组开发而言，掌握以上应该能非常舒服地做一个开发工程师，所谓工欲善其事，必先利其器。
 
 ---
 ##### 2 PYTHON能力
@@ -34,8 +34,11 @@
 ##### 2.1 Clean Code
 
 我在上篇文章中推荐在HackerRank做完全部python习题，并且在LeetCode上继续训练。不断刷题能极大的增强我们写单个函数、算法的能力，训练我们的思维能力，但对我们写"工程项目"却鲜有帮助。因为每一题的context都不一样，容易养成重复造轮子、代码不整洁的坏习惯，在我入职的第一个月，因为坏习惯被反复批评，之后我仔细读了《Clean Code》一书，情况有所好转。所以，请务必注意代码的测试、抽象层、命名规范、参数、Exception等。
+
 训练方法：《Clean Code》，要有好代码的smell
+
 训练成果：厉害的程序员写出机器能读懂的代码，好的程序员写出人能读懂的代码。
+
 ```python3
 # 保龄球积分，从第0轮到第10轮，已知每一轮的击倒情况，求总分
 def score_frame(frame=10):
@@ -60,7 +63,9 @@ def score_frame(frame=10):
 ##### 2.2 Flask
 
 整洁代码是基础中的基础，接下来掌握的是web框架。要想熟练使用Flask，知识上要求对网络会话层、表示层和应用层有了解，从Client端输入URI并发送请求的一瞬间，网络通过自上而下的OSI结构，传输层（TCP）--- 网络层（IP） --- 数据链路层 --- 物理层， 路由（识别IP），然后，Server端与之建立TCP连接，拿到request对象，梳理业务逻辑，返回response对象，经过同样的一系列过程到Client端接受数据（如果是浏览器则会渲染页面）。这背后所有的事情，就是一个web工程师的工作所在。
+
 训练方法：《Flask Web开发，基于python的web开发实战》，上篇文章已经推荐过了
+
 训练成果：能够独立编写并部署一个满足业务需求的web应用
 ![](https://upload-images.jianshu.io/upload_images/12134479-409b3b1a48a87ac9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 *FLASK框架可以简单至此，但面对更大的需求，还需多思量。*
@@ -88,7 +93,9 @@ if __name__ == '__main__':
 ##### 2.3 AioHttp
 
 一步通，则步步通，能够学会一个框架，其他的框架就不难了。Flask的底层是werkzeuk，基于CGI（通用网关接口，Common Gateway Interface）的WSGI在业务受到了异步的挑战，ASGI应运而生。AioHttp的框架，支持python asycio，能极大的提高API的性能（与flask框架下API性能的差异，可以查看压测报告）。
+
 训练方法：[AioHttp Git](https://github.com/aio-libs/aiohttp/)，[Asyncio Doc](https://docs.python.org/3/library/asyncio.html)，永远不要放下源码和doc
+
 训练成果：能够独立编写并部署一个满足业务需求的web应用，理解并掌握python的异步语法
 ```python3
 from aiohttp import web
@@ -115,7 +122,9 @@ if __name__ == '__main__':
 ##### 2.4 MONGO
 
 对于一个助理工程师，不懂框架，你也能形成生产力，可以做一个写数据库增删改查的cool boy。如果一个工程师不会操作数据库，那就连“删库跑路”的“黑暗森林威慑”都建立不起来...所以无论怎样，这个得会。我们有两种操作mongodb的方式，一种是ODM（Object-Document Mapper），如mongoengine；另一种则是超有名的pymongo。
+
 训练方法：MongoEngine文档，PyMongo文档
+
 训练成果：熟练对mongo表进行增删改查，能够对mongo表查询进行一定程度的优化
 ```python3
 # 更改user_info这张表中的user_id为‘test’的年龄为22
@@ -217,7 +226,7 @@ def denominator(x):
     return x(1)
 ```
 ![](https://upload-images.jianshu.io/upload_images/12134479-172d72c886138949.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1600)
-*Isolate the parts of a program that deal with how data are represendted from the parts that deal with how data are manipulated*
+*Isolate the parts of a program that deal with how data are represendted from the parts that deal with how data are manipulated*  
 用了一个简单的例子来解释表示层和操作层（完全不一样的表示层，但是操作层却完全一样），庞大的系统必然存在着细小的抽象。我们只要能够掌握抽象的方法，再配合leetcode中的算法知识，那么所有的业务逻辑必然迎刃而解。
 
 ##### 2.7 lib/site-packages
