@@ -54,7 +54,7 @@ def score_frame(frame=10):
 
 
 
-![1](https://upload-images.jianshu.io/upload_images/12134479-c9f6fac31a6cc038.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![1](https://upload-images.jianshu.io/upload_images/12134479-c9f6fac31a6cc038.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)  
 *Clean code is simple and direct. Clean code reads like well-written prose. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.*
 
 ##### 2.2 Flask
