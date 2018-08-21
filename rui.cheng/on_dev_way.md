@@ -231,6 +231,7 @@ def denominator(x):
 ![](https://upload-images.jianshu.io/upload_images/12134479-172d72c886138949.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1600)
 
 *Isolate the parts of a program that deal with how data are represendted from the parts that deal with how data are manipulated*
+
 用了一个简单的例子来解释表示层和操作层（完全不一样的表示层，但是操作层却完全一样），庞大的系统必然存在着细小的抽象。我们只要能够掌握抽象的方法，再配合leetcode中的算法知识，那么所有的业务逻辑必然迎刃而解。
 
 ##### 2.7 lib/site-packages
