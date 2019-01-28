@@ -33,7 +33,7 @@
 ![447*2](https://upload-images.jianshu.io/upload_images/12134479-f74e68ba18ec212b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 有进位乘法  
-![447*26](https://upload-images.jianshu.io/upload_images/12134479-fc1b18c80c512284.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![447*26](https://upload-images.jianshu.io/upload_images/12134479-d0f948198d99afc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 乘数中间有0乘法  
 ![447*206](https://upload-images.jianshu.io/upload_images/12134479-009285a0ce63888d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
